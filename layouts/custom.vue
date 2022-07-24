@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>
-        Errorr 404 سفارشی
-    </h1>
+    <slot />
+    <RestaurantAd />
   </div>
 </template>
 

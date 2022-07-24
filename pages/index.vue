@@ -3,11 +3,12 @@
 </script>
 <template>
   <div>
-    <Nav />
-    <div class="container">
-      <h1>welcome to restaurantly</h1>
-      <a href="/restaurants">Go to restaurant</a>
+
+    <div class="container" >
+      <h1>welcome to restaurantly Index Page</h1>
+      <NuxtLink to="/restaurants">restaurant</NuxtLink>
     </div>
+
   </div>
 </template>
 <style scoped>

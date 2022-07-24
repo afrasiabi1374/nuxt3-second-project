@@ -9,6 +9,10 @@
 
 <template>
     <div>
-        {{ restaurant }}
+        <NuxtLayout name="custom">
+            <p>
+                {{ restaurant }}
+            </p>
+        </NuxtLayout>
     </div>
 </template>
