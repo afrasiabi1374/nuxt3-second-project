@@ -9,10 +9,22 @@
 
 <template>
     <div>
-        <NuxtLayout name="custom">
-            <p>
+        <NuxtLayout name="custom" v-if="restaurant">
+            <p >
                 {{ restaurant }}
             </p>
         </NuxtLayout>
+        <div v-else>
+            <img
+                src="https://www.iconpacks.net/icons/2/free-sad-face-icon-2691-thumb.png"
+                alt="error-image"
+            />
+            <nuxt-link to="/">go back!</nuxt-link>
+        </div>
     </div>
 </template>
+<style scoped>
+  img {
+    width:10rem
+  }
+</style>
