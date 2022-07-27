@@ -14,13 +14,17 @@
                 {{ restaurant }}
             </p>
         </NuxtLayout>
-        <div v-else>
-            <img
-                src="https://www.iconpacks.net/icons/2/free-sad-face-icon-2691-thumb.png"
-                alt="error-image"
-            />
-            <nuxt-link to="/">go back!</nuxt-link>
-        </div>
+        <NuxtLayout   name="error" v-else>
+            <template #header>
+                <h1>
+                رستورانی با این اسم وجود ندارد!
+                <h2>ارور سفارشی</h2>
+                </h1>
+            </template>
+            <template #redirect>
+                <nuxt-link class="btn btn-success" to="/restaurants">go back!</nuxt-link>
+            </template>
+        </NuxtLayout>
     </div>
 </template>
 <style scoped>

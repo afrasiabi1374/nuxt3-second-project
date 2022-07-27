@@ -1,16 +1,16 @@
 <template>
   <div class="container text-center">
-    <h1>
-      page not found
-      <h2>ارور سفارشی</h2>
-    </h1>
-    <div>
-      <img
-        src="https://www.iconpacks.net/icons/2/free-sad-face-icon-2691-thumb.png"
-        alt=""
-      />
-    </div>
-    <nuxt-link class="btn btn-danger" to="/">go back</nuxt-link>
+    <nuxt-layout name="error">
+      <template #header>
+        <h1>
+          page not found___404
+          <h2>ارور سفارشی</h2>
+        </h1>
+      </template>
+      <template #redirect>
+        <nuxt-link class="btn btn-warning" to="/">go back</nuxt-link>
+      </template>
+    </nuxt-layout>
   </div>
 </template>
 
